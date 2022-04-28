@@ -1,7 +1,7 @@
 .DS_Store
 cdk.json
 scratchpad.txt
-node_modules/*
-cdk.out/*
+node_modules/
+cdk.out/
 launch.json
 settings.json
