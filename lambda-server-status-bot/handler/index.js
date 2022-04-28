@@ -38,8 +38,6 @@ function ActiveServersEmbed(serverStatus) {
 }
 
 async function postUpdateToDiscord(discordToken, discordChannel, activeServerEmbed, inactiveServerEmbed) {
-
-//const postUpdateToDiscord = ((discordToken, discordChannel, activeServerEmbed, inactiveServerEmbed) => {
     return new Promise((resolve, reject) => {
         const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
         client.login(discordToken);
