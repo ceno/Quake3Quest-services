@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Status API lambda",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/lambda-server-status/handler/index.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ],
+            "env": {
+                "DEBUG": "true",
+                "CLOUDWATCH_METRICS": "[{\"name\":\"Global\",\"ip\":\".\"}]",
+                "MASTER_IP": "CHANGEME"
+            }
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Status Bot lambda",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/lambda-server-status-bot/handler/index.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ],
+            "env": {
+                "DEBUG": "true",
+                "DISCORD_TOKEN": "CHANGEME",
+                "DISCORD_CHANNEL": "CHANGEME"
+            }
+        }
+    ]
+}

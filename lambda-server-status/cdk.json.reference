@@ -1,0 +1,6 @@
+{
+    "context": {
+        "CLOUDWATCH_METRICS": "[{\"name\":\"Global\",\"ip\":\".\"}]",
+        "MASTER_IP": "CHANGEME"
+      }
+  }
