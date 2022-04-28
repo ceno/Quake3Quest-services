@@ -1,0 +1,6 @@
+{
+    "context": {
+        "DISCORD_TOKEN": "CHANGEME",
+        "DISCORD_CHANNEL": "CHANGEME"
+      }
+  }
