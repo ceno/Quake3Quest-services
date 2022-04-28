@@ -1,0 +1,5 @@
+.DS_Store
+cdk.json
+scratchpad.txt
+node_modules/*
+cdk.out/*
