@@ -21,7 +21,7 @@ export class ServerStatusBot extends cdk.Stack {
     });
 
     const rule = new events.Rule(this, 'Rule', {
-      schedule: events.Schedule.expression('rate(1 minute)')
+      schedule: events.Schedule.expression('rate(2 minutes)')
     });
 
     rule.addTarget(new targets.LambdaFunction(serverStatusBot));
