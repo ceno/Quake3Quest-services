@@ -1,0 +1,7 @@
+{
+    "context": {
+        "DISCORD_TOKEN": "CHANGEME",
+        "DISCORD_CHANNEL": "CHANGEME",
+        "PRIVATE_KEY": "-----BEGIN RSA PRIVATE KEY-----\nCHANGEME\n-----END RSA PRIVATE KEY-----\n"
+      }
+  }
